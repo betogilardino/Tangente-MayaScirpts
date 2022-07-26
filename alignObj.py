@@ -7,7 +7,7 @@ Para agregar este script a un shelf button o a un hotkey, agrega el siguiente co
 
 Para copiar la pose al siguiente Frame:
 
-import copyPoseToFrame
+import alignObj
 alignObj.doAlign()
 
 '''
