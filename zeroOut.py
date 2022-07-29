@@ -8,7 +8,7 @@
 Para usarlo como un hotkey o como boton en el shelf, copia el siguiente codigo Python dependiendo
 que atributos quieres modificar:
 
-Para hacer que la translacion se vuelva 0:
+Para hacer que la rotacion se vuelva 0:
 
 import zeroOut
 zeroOut.applyZeroOut(rot=True,trans=False,scale=False)
@@ -51,8 +51,8 @@ def applyZeroOut(rot=True,trans=True,scale=False):
     else:
         if rot:
             zeroOut(objSelected,rotList)
-        elif trans:
+        if trans:
             zeroOut(objSelected,transList)
-        elif scale:
+        if scale:
             zeroOut(objSelected,scaleList,newValue=1)
 
